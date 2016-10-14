@@ -1,0 +1,19 @@
+nodeValue et data pour récupérer le texte du 1er enfant
+
+childNodes retourne la liste des enfants d'un élément
+
+nextSibling et PreviouSibling pour accéder respectivement au noeud suivant et au noeud précédent
+
+création d'élément avec la méthode createElement
+
+Affectation des attributs avec setAttribut()
+
+Insertion d'élément avec appendChild() (en tant dernier enfant)
+
+Ajouter des noeuds textuels avec méthode createTextNode()
+
+cloneNode() pour cloner un élément
+
+replaceChild() pour remplacer un enfant par un autre
+
+removeChild() pour supprimer un élément enfant

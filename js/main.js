@@ -23,9 +23,9 @@ console.log("monObject : " + monObject);
 console.log("monObject : ", monObject());
 
 var nbVoiture = prompt("Combien de voiture");
-console.log("vous avez " + nbVoiture + " voitures");*/
+console.log("vous avez " + nbVoiture + " voitures");
 
-/*var annee = prompt("En quelle année etes-vous né ?");
+var annee = prompt("En quelle année etes-vous né ?");
 
 if (annee >= 1998)
 {
@@ -135,4 +135,39 @@ var caseTortue = 0;
 	}
  
 	
+
+	// Approche DOM 
+
+	document.getElementById("maDiv").innerHTML = "<p>Mon super texte</p>";
+
+	document.getElementById("maDiv2").innerHTML = "<p>Mon super texte 2</p>";
+
+
+
+
+	// changement de lien en js
+document.getElementById("superDIV").innerHTML = '<a href=www.google.com>nouveau lien</a>';
+
+	// mettre une citation entre blockquote
+console.log(document.getElementById("superDiv").innerHTML);
+var c = document.getElementById("superDiv").innerHTML; 
+document.getElementById("superDiv").innerHTML = 'citation d\'Oscar Wilde<blockquote>' + c + '</blockquote>';
+console.log(c);
+
+	
+x = document.querySelector("#superDIV").getElementsByTagName('a');
+
+for (i=0;i<5;i++)
+console.log(x[i]);
+
+
+Tcheckbox = document.querySelectorAll('input[type = checkbox]');
+console.log(Tcheckbox);
+
+for (var i in Tcheckbox)
+{
+    Tcheckbox[i].checked = true;
+}
+
+
 
