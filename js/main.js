@@ -170,4 +170,26 @@ for (var i in Tcheckbox)
 }
 
 
+Tcells = document.getElementsByTagName('td');
 
+for(var i=0; 1<Tcells.length; 1++){
+	Tcells[i].oneclick = function(){
+
+		if(this.getAttribute("data-encours")) return;
+		this.setAttribute("data-encours", "encours...");
+
+		var text = this.innerHTML;
+		var input =document.createElement("input");
+		input.type = "text";
+		input.value = text;
+
+		this.innerHTML = '';
+		this.appendChild(input);
+
+		input.focus();
+		input.onblur = function(){
+			this.parentNode.removeAttribute("data-encours");
+			this.parentNode.innerHTML = this.value;
+		};
+	};
+}
